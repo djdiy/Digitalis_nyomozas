@@ -23,7 +23,7 @@ namespace Digitalis_nyomozas
 
         public override string ToString()
         {
-            return $"Személy: {this.person}, gyanusítottsági szint(0-100): {this.suspicion_lvl}, státusz: {this.status}";
+            return $"Gyanusított: {this.person}, gyanusítottsági szint(0-100): {this.suspicion_lvl}, státusz: {this.status}";
         }
     }
 }
