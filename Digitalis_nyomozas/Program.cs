@@ -9,6 +9,9 @@
 
             Person person_test = new Person("Test_person", 123, "123 éves");
             Console.WriteLine(person_test);
+
+            Suspect suspect_test = new Suspect(person_test, 99, "őrizetben");
+            Console.WriteLine(suspect_test);
         }
     }
 }
