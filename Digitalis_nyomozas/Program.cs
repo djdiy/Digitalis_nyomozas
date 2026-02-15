@@ -36,6 +36,34 @@
             Console.WriteLine(evidence_test);
 
 
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+
+
+
+            //Ügy teszt
+            List<Person> people = new List<Person>();
+            Person person_test1 = new Person("Test_person1", 1231, "1231 éves");
+            Person person_test2 = new Person("Test_person2", 1232, "1232 éves");
+            Person person_test3 = new Person("Test_person3", 1233, "1233 éves");
+
+            people.Add(person_test1);
+            people.Add(person_test2);
+            people.Add(person_test3);
+
+            List<Evidence> evidence = new List<Evidence>();
+            Evidence evidence_test1 = new Evidence(2, "fotó1", "wow, ez nagyon biztos1", 5);
+            Evidence evidence_test2 = new Evidence(3, "fotó2", "wow, ez nagyon biztos2", 5);
+            Evidence evidence_test3 = new Evidence(4, "fotó3", "wow, ez nagyon biztos3", 5);
+
+            evidence.Add(evidence_test1);
+            evidence.Add(evidence_test2);
+            evidence.Add(evidence_test3);
+
+            Case case_test = new Case(0, "Az ügy", "nagyon rejtélyes", "folyamatban", people, evidence);
+            Console.WriteLine(case_test);
+
 
         }
     }
