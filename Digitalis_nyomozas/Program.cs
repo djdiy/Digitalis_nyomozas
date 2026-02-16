@@ -65,6 +65,18 @@
             Console.WriteLine(case_test);
 
 
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine();
+
+            //Ügy állapot teszt
+            CaseStatus status_test = new CaseStatus("folyamatban");
+            Console.WriteLine(status_test);
+            status_test.allapotvaltozas("kész");
+            Console.WriteLine(status_test);
+
+
+
         }
     }
 }
