@@ -1,4 +1,6 @@
-﻿namespace Digitalis_nyomozas
+﻿using System.Security.Cryptography.X509Certificates;
+
+namespace Digitalis_nyomozas
 {
     internal class Program
     {

@@ -13,14 +13,14 @@ namespace Digitalis_nyomozas
         private List<Person> case_people;
         private List<Evidence> case_evidence;
 
-        public Case(int case_id, string title, string case_description, string case_state, List<Person> case_people, List<Evidence> case_evidence)
+        public Case(int case_id, string title, string case_description, string case_state)
         {
             this.case_id = case_id;
             this.title = title;
             this.case_description = case_description;
             this.case_state = case_state;
-            this.case_people = case_people;
-            this.case_evidence = case_evidence;
+            this.case_people = new List<Person>();
+            this.case_evidence = new List<Evidence>();
         }
 
         public int Case_id { get => case_id; set => case_id = value; }
