@@ -19,6 +19,8 @@ namespace Digitalis_nyomozas
             this.title = title;
             this.case_description = case_description;
             this.case_state = case_state;
+            this.case_people = case_people;
+            this.case_evidence = case_evidence;
         }
 
         public int Case_id { get => case_id; set => case_id = value; }

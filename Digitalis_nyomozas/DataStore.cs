@@ -54,7 +54,7 @@ namespace Digitalis_nyomozas
             {
                 if(c.Case_id == id)
                 {
-                    c.Case_description = newState;
+                    c.Case_state = newState;
                 }
             }
         }
