@@ -12,7 +12,6 @@ namespace Digitalis_nyomozas
         private string case_state;
         private List<Person> case_people;
         private List<Evidence> case_evidence;
-        private List<Suspect> suspects;
 
         public Case(int case_id, string title, string case_description, string case_state)
         {
@@ -28,28 +27,7 @@ namespace Digitalis_nyomozas
         public string Case_state { get => case_state; set => case_state = value; }
         internal List<Person> Case_people { get => case_people; set => case_people = value; }
         internal List<Evidence> Case_evidence { get => case_evidence; set => case_evidence = value; }
-        internal List<Suspect> Suspects { get => suspects; set => suspects = value; }
 
-        public void DecisionEngine(string name)
-        {
-            foreach(Evidence e in case_evidence)
-            {
-                Console.WriteLine(e);
-            }
-            Console.Write("Add meg az új gyanusítottsági szintet: ");
-            int new_level = Convert.ToInt32(Console.ReadLine());
-            if(new_level >= 90)
-            {
-                Console.WriteLine("figyelem, a gyanusítottsági szint >= 90.");
-            }
-            foreach(Suspect s in suspects)
-            {
-                if(s.Person.Name == name)
-                {
-                    s.Suspicion_lvl = new_level;
-                }
-            }
-        }
         public override string ToString()
         {
             string people_string = "";

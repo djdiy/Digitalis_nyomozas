@@ -22,6 +22,7 @@ namespace Digitalis_nyomozas
 
         public void EvidenceManager()
         {
+            Console.WriteLine("1. bizonyíték hozzáadása\n2. bizonyíték törlése\n3. bizonyíték listázása");
             switch (Console.ReadLine())
             {
                 case "1": //bizonyíték hozzáadása
@@ -60,6 +61,7 @@ namespace Digitalis_nyomozas
 
         public void CaseManager()
         {
+            Console.WriteLine("1. új ügy létrehozása\n2. ügyek listázása\n3. személyek és bizonyítékok hozzárendelése");
             switch (Console.ReadLine())
             {
                 case "1": //új ügy létrehozása
