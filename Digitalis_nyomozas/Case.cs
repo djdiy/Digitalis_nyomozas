@@ -20,9 +20,6 @@ namespace Digitalis_nyomozas
             this.title = title;
             this.case_description = case_description;
             this.case_state = case_state;
-            this.case_people = new List<Person>();
-            this.case_evidence = new List<Evidence>();
-            this.suspects = new List<Suspect>();
         }
 
         public int Case_id { get => case_id; set => case_id = value; }
@@ -39,6 +36,7 @@ namespace Digitalis_nyomozas
             {
                 Console.WriteLine(e);
             }
+            Console.Write("Add meg az új gyanusítottsági szintet: ");
             int new_level = Convert.ToInt32(Console.ReadLine());
             if(new_level >= 90)
             {

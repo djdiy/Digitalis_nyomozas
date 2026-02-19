@@ -11,14 +11,14 @@ namespace Digitalis_nyomozas
         private List<Case> cases = new List<Case>();
         private List<Person> people = new List<Person>();
         private List<Evidence> evidences = new List<Evidence>();
+        private List<TimelineEvent> timelinevents = new List<TimelineEvent>();
 
 
         internal List<User> Users { get => users; set => users = value; }
         internal List<Case> Cases { get => cases; set => cases = value; }
         internal List<Person> People { get => people; set => people = value; }
         internal List<Evidence> Evidences { get => evidences; set => evidences = value; }
-
-
+        internal List<TimelineEvent> Timelinevents { get => timelinevents; set => timelinevents = value; }
 
         public void EvidenceManager()
         {
@@ -44,6 +44,17 @@ namespace Digitalis_nyomozas
                         Console.WriteLine(e);
                     }
                     break;
+            }
+        }
+
+        public void CaseStatus(int id, string newState)
+        {
+            foreach (Case c in cases)
+            {
+                if(c.Case_id == id)
+                {
+                    c.Case_description = newState;
+                }
             }
         }
 
